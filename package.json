@@ -1,0 +1,28 @@
+{
+  "name": "to-do-app-api",
+  "version": "1.0.0",
+  "description": "app de tarefas",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/igor-diego/TO-DO-APP-API.git"
+  },
+  "keywords": [
+    "to",
+    "do",
+    "app"
+  ],
+  "author": "igor-diego",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/igor-diego/TO-DO-APP-API/issues"
+  },
+  "homepage": "https://github.com/igor-diego/TO-DO-APP-API#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "type": "module"
+}
