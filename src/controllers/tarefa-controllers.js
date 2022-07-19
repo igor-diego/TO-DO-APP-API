@@ -1,11 +1,11 @@
 const tarefaController = (app) => {
 
-    app.get('/tarefas', (req, res) => {
-        res.send('Rota GET para tarefa')
+    app.get('/tarefa', (req, res) => {
+        res.json({"mesg": 'Rota GET para tarefa'})
     })
 
     app.post('/tarefa', (req, res) => {
-        res.send('Rota POST para tarefa')
+        res.json({"msg": 'Rota POST para tarefa'})
     })
 }
 
