@@ -4,9 +4,9 @@ import usuarioController from './controllers/usuario-controllers.js'
 import tarefaController from './controllers/tarefa-controllers.js'
 
 const app = express()
-const port = 3000
+const port = 3030
 
-app.use(express.json)
+app.use(express.json())
 
 usuarioController(app)
 tarefaController(app)

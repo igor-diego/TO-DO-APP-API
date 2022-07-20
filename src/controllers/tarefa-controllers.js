@@ -1,11 +1,15 @@
+import Tarefa from "../models/tarefa.js"
+
 const tarefaController = (app) => {
 
     app.get('/tarefa', (req, res) => {
-        res.json({"mesg": 'Rota GET para tarefa'})
+        res.json({"mesg": "Rota GET para tarefa"})
     })
 
     app.post('/tarefa', (req, res) => {
-        res.json({"msg": 'Rota POST para tarefa'})
+        const body = req.body
+        const tarefa = new Tarefa(body.titulo, body.descrição, body.status, body.dataDeCriação) 
+        res.json(tarefa)
     })
 }
 

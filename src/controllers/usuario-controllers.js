@@ -1,14 +1,18 @@
-
+import Usuario from "../models/usuario.js"
 
 const usuarioController = (app) => {
 
     app.get('/usuario', (req, res) => {
-        res.json({"msg": 'Rota GET para usuario'})
+        // const usuario = new Usuario()
+        //usuario
+        res.json({"usuarios": pegaUsuarios()})
     })
 
     app.post('/usuario', (req, res) => {
-        console.log(req.body);
-        res.json({"rota" : "Rota POST para usuario"})
+        const body = req.body
+        const usuario = new Usuario(body.nome, body.email, body.senha)
+        usuario.insereUsuario(usuario)
+        res.json(usuario)
     })
 }
 
