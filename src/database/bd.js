@@ -1,4 +1,4 @@
-const usuario = []  //cirando uma tabela de usuario
-const tarefa = []//cirando uma tabela de tarefa
+const usuario = []  //criando uma tabela de usuario
+const tarefa = []//criando uma tabela de tarefa
 
 export default {usuario, tarefa} 
