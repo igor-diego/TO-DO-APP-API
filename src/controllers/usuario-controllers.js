@@ -1,5 +1,5 @@
 import Usuario from "../models/usuario.js"
-import ValidaUsuario from "../../services/validacaoUsuario.js"
+import ValidaUsuario from "../services/validacaoUsuario.js"
 
 // funçao que vai receber a instancia do servidor como parametros
 // e vai agrupar todos metodos que representam as rotas
